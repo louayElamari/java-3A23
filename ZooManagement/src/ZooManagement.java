@@ -2,8 +2,8 @@ import java.util.Scanner;
 
 public class ZooManagement {
 
-    private static int nbrCages = 7;
-    private static String zooName = "zoo";
+    private static int nbrCages = 20;
+    private static String zooName = " my zoo";
 
 
     public static void main(String[] args) {
