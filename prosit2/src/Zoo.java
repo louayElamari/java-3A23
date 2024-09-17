@@ -1,18 +1,20 @@
 
 public class Zoo {
-   Animal animal;
+   Animal animals[];
    String name;
    String city;
-   int nbrCages;
+   int nbrCages= 25;
    public Zoo() {}
 
-   public Zoo(Animal animal,String name ,String city ,int nbrCages)
+   public Zoo(String name ,String city ,int nbrCages)
    {
-     this.animal = animal;
+    animals = new Animal[nbrCages];
      this.name = name;
      this.city = city;
      this.nbrCages = nbrCages;
 
 
    }
+
+
 }
