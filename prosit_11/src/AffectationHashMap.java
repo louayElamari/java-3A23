@@ -4,7 +4,7 @@ import java.util.Map;
 import java.util.TreeMap;
 
 public class AffectationHashMap {
-    private HashMap<Employe, Departement> affectations;
+    private Map<Employe, Departement> affectations;
 
     public AffectationHashMap() {
         affectations = new HashMap<>();
@@ -41,12 +41,9 @@ public class AffectationHashMap {
     }
 
     public void supprimerEmployeEtDepartement(Employe e, Departement d) {
-        if (affectations.containsKey(e) && affectations.get(e).equals(d)) {
-            affectations.remove(e);
-            System.out.println("Employé et département supprimés : " + e + ", " + d);
-        } else {
-            System.out.println("Aucune correspondance trouvée pour " + e + " et " + d);
-        }
+
+            affectations.remove(e,d);
+
     }
 
     public void afficherEmployes() {
